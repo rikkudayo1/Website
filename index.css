@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.side-nav {
+    width: 300px;
+    background-color: black;
+    height: 100vh;
+}
+.side-nav-upper {
+    color: white;
+    margin-top: 30px;
+}
+.side-nav-upper h3 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+.side-nav-content {
+    margin-top: 25px;
+}
+.side-nav-items {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-items: center;
+    padding: 15px;
+    transition: .5s ease-out background-color;
+}
+.side-nav-items h3 {
+    margin-top: 2px;
+    margin-left: 15px;
+}
+.side-nav-items:hover {
+    background-color: rgb(22, 22, 22);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    padding: 15px;
+}
+.nav-left-content {
+    padding: 10px;
+    width: 60%;
+}
+.nav-right-content {
+    margin-top: 3px;
+    padding: 10px;
+}
+.nav-right-content a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.nav-right-content a:hover {
+    border-bottom: 4px solid white;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+}
+.input input {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 7px;
+    margin-left: 10px;
+}
+.input-icon {
+    margin-top: 2px;
+}
+.welcome {
+    position: relative;
+    background-image: url('./1369866.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    justify-items: center;
+}
+.welcome h1 {
+    font-size: 45px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: white;
+    top: 40%;
+    text-align: center;
+}
+.container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.container button {
+    border: none;
+    padding: 20px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: .5s ease-in-out background-color, .5s ease-in-out color;
+}
+.container button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
