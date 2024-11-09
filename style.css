@@ -10,18 +10,27 @@
       "XROT" 0,
       "YROT" 0;
 }
-
 .nav-bar {
-    background-color: rgb(200, 200, 200);
     display: flex;
     flex-direction: row;
-    border-bottom: 5px solid black;
+    justify-content: space-between;
 }
-.nav-content, .nav-content1 {
+.nav-content-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+.nav-content-wrap h1 {
+    margin-top: 5px;
+}
+.nav-content {
     padding: 15px;
+    border-bottom: 5px solid transparent;
+    transition: .5s ease-in-out border-bottom;
 }
 .nav-content:hover {
-    background-color: rgb(121, 121, 121);
+    border-bottom: 5px solid black;
     cursor: pointer;
 }
 .nav-item2 {
@@ -35,17 +44,20 @@
 }
 
 .main {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.quick-links, .contacts {
+.quick-links{
     position: absolute;
-    top: 420px;
+    top: 447px;
     left: 150px;
 }
 .contacts {
-    top: 1513px;
+    position: absolute;
+    left: 150px;
+    bottom: 225px;
 }
 .quick-links h1, .contacts h1 {
     font-weight: bold;
@@ -79,18 +91,18 @@
 }
 .header {
     width: 100%;
-    height: 450px;
-    margin-bottom: 50px;
+    height: 525px;
 }
 .header-inside {
+    margin-top: 65px;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     margin-right: 150px;
     margin-left: 150px;
 }
 .header-left {
-    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
 }
 .header-left h1 {
     font-weight: 1000;
@@ -104,6 +116,7 @@
     background: rgb(200, 200, 200);
     padding: 10px;
     margin-top: 25px;
+    margin-bottom: 50px;
     border: 5px solid black;
     transition: .5s ease-out color, .5s ease-out background-color;
 }
@@ -115,24 +128,22 @@
     background-color: black;
     cursor: pointer;
 }
-.header-right img {
-    width: 350px;
-    height: 350px;
-    margin-top: 50px;
-    filter: grayscale();
+.header-right {
+    margin-top: 100px;
+    margin-left: 150px;
 }
 .container-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .projects {
-    background-image: url(dot.webp);
+    background-image: url(images/dot.webp);
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     background-color: rgb(235, 235, 235);
 }
 .projects-inside {
-    margin-top: 100px;
+    margin-top: 75px;
     margin-bottom: 150px;
     margin-left: 150px;
     margin-right: 150px;
@@ -141,7 +152,7 @@
     font-size: 46px;
     font-weight: bold;
 }
-.project-container {
+.project-container, .project-container2 {
     overflow: hidden;
     border: 5px solid black;
     background: white;
@@ -150,6 +161,9 @@
     box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.75);
+}
+.project-container2 {
+    margin-left: 50px;
 }
 .project-nav {
     border-bottom: 5px solid black;
@@ -199,7 +213,7 @@
     height: 250px;
 }
 .footer-inside {
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
